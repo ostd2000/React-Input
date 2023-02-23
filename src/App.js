@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+
+import PasswordIcon from "@mui/icons-material/Password";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+
+import InputC from "./InputC";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app">
+            <div className="app_c1">
+                <InputC
+                    type="text"
+                    primary
+                    filled
+                    outlined
+                    elevation={900}
+                    icon={<PasswordIcon />}
+                >
+                    First name
+                </InputC>
+
+                <InputC
+                    type="text"
+                    danger
+                    filled
+                    outlined
+                    elevation={900}
+                    errMsg="This username does not exist."
+                >
+                    Username
+                </InputC>
+
+                <InputC
+                    type="password"
+                    primary
+                    filled
+                    outlined
+                    elevation={900}
+                    showPasswordIcon={<VisibilityIcon />}
+                    hidePasswordIcon={<VisibilityOffIcon />}
+                >
+                    Something
+                </InputC>
+            </div>
+        </div>
+    );
 }
 
 export default App;
