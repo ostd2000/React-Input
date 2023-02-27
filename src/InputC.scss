@@ -1,22 +1,22 @@
 @use "sass/variables" as *;
 
 .input-c {
+    &__input::placeholder {
+        color: $color_primary_0;
+    }
+
+    &__input:focus {
+        outline: none;
+    }
+
     &__icon {
         .MuiSvgIcon-root {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-
             color: $color_primary;
         }
     }
 
     &__password-icon {
         .MuiSvgIcon-root {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-
             color: $color_primary;
         }
     }

@@ -1,8 +1,6 @@
 import "./App.scss";
 
 import PasswordIcon from "@mui/icons-material/Password";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 
 import InputC from "./InputC";
 
@@ -11,37 +9,61 @@ function App() {
         <div className="app">
             <div className="app_c1">
                 <InputC
+                    rtl
                     type="text"
+                    placeholder="نام کاربری"
                     primary
+                    lowContrast
+                    filled
+                    outlined
+                    elevation={900}
+                >
+                    نام کاربری
+                </InputC>
+
+                <InputC
+                    rtl
+                    type="password"
+                    placeholder="رمز عبور"
+                    primary
+                    lowContrast
                     filled
                     outlined
                     elevation={900}
                     icon={<PasswordIcon />}
+                    required
                 >
-                    First name
+                    رمز عبور
                 </InputC>
 
                 <InputC
-                    type="text"
+                    rtl
+                    type="password"
+                    placeholder="رمز عبور"
                     danger
                     filled
                     outlined
                     elevation={900}
-                    errMsg="This username does not exist."
+                    icon={<PasswordIcon />}
+                    errMsg="این نام کاربری از قبل موجود می باشد"
                 >
-                    Username
+                    نام کاربری
                 </InputC>
 
                 <InputC
-                    type="password"
+                    rtl
+                    type="text"
+                    placeholder="رمز عبور"
                     primary
+                    lowContrast
                     filled
                     outlined
+                    large
                     elevation={900}
-                    showPasswordIcon={<VisibilityIcon />}
-                    hidePasswordIcon={<VisibilityOffIcon />}
+                    icon={<PasswordIcon />}
+                    required
                 >
-                    Something
+                    نام کاربری
                 </InputC>
             </div>
         </div>
