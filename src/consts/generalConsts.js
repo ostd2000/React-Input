@@ -58,6 +58,8 @@ export const APP_COLORS = {
     COLOR_TXT_100: "hsl(0, 0%, 87%)",
     COLOR_TXT_200: "hsl(0, 0%, 62%)",
     COLOR_TXT_300: "hsl(0, 0%, 42%)",
+
+    COLOR_ONLINE: "hsl(148, 54%, 54%)",
 };
 
 export const APP_FONTS = {
